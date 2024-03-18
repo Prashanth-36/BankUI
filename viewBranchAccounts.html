@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="top-nav">
+        <li><img src="images/logo.png" alt="" id="logo" /></li>
+        <li>
+          <a href="accountsManagement.html" class="active"
+            >Accounts Management</a
+          >
+        </li>
+        <li><a href="branchManagement.html">Branch Management</a></li>
+        <li><a href="">Customer Management</a></li>
+        <li><a href="">Employee Management</a></li>
+        <li><a href="">Fund Transfer</a></li>
+      </ul>
+      <a href="" class="top-nav" id="logout">Logout</a>
+    </nav>
+
+    <div class="main-container">
+      <aside>
+        <ul class="side-nav">
+          <li>
+            <a href="accountsManagement.html">Create Account</a>
+          </li>
+          <li>
+            <a href="viewBranchAccounts.html" class="active"
+              >View Branch Accounts</a
+            >
+          </li>
+          <li>
+            <a href="viewAccount.html">View / Modify Account Details</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <form action="" method="get" class="search">
+          <label for="branchId">Branch ID</label>
+          <input
+            type="search"
+            name="branchId"
+            id="branchId"
+            placeholder="Branch ID"
+          />
+          <img src="images/search.png" alt="" width="50rem" />
+        </form>
+        <table class="border-table">
+          <tr>
+            <th
+              colspan="7"
+              style="
+                text-align: center;
+                background-color: var(--blue);
+                color: white;
+              "
+            >
+              Account Details
+            </th>
+          </tr>
+          <tr>
+            <th>Account Number</th>
+            <th>Customer ID</th>
+            <th>Current Balance</th>
+            <th>Is Primary Accout</th>
+            <th>Account Open Date</th>
+            <th>Branch ID</th>
+            <th>Account Status</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>

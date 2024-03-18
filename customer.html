@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="top-nav">
+        <li><img src="images/logo.png" alt="" id="logo" /></li>
+        <li>
+          <a href="customer.html" class="active">My Accounts</a>
+        </li>
+        <li><a href="moneyTransfer.html">Money Transfer</a></li>
+      </ul>
+      <a href="" class="top-nav" id="logout">Logout</a>
+    </nav>
+
+    <div class="main-container">
+      <aside>
+        <ul class="side-nav">
+          <li>
+            <a href="customer.html" class="active">My Accounts</a>
+          </li>
+          <li>
+            <a href="transactionStatement.html">View Transaction Statement</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <div class="totalBalance">
+          Total Available Balance: ₹<span>10000</span>
+        </div>
+        <div class="options">
+          <div
+            class="card"
+            onclick="window.location.href='viewCustomerAccounts.html';"
+          >
+            <img src="images/bank-account.png" width="100rem" alt="" />
+            <p>View All Accounts</p>
+          </div>
+          <div class="card">
+            <img src="images/wallet.png" alt="" width="100rem" />
+            <p>Check Balance</p>
+          </div>
+          <div class="card">
+            <img src="images/financial.png" alt="" width="100rem" />
+            <p>Change Primary Account</p>
+          </div>
+          <div class="card">
+            <img src="images/password.png" alt="" width="100rem" />Change MPIN
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
