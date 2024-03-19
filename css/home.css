@@ -102,7 +102,11 @@ aside {
   width: 20vw;
   /* height: 100vh; */
 }
-
+#hidden-eye {
+  width: 1.5rem;
+  position: relative;
+  top: 4px;
+}
 #logo {
   width: 7rem;
   mix-blend-mode: multiply;
@@ -235,4 +239,9 @@ label {
 .options .selected {
   transform: scale(0.9);
   box-shadow: 0.5px 0.5px 15px var(--blue);
+}
+.account-selection {
+  margin-left: 3rem;
+  padding: 0.5rem;
+  min-inline-size: 5rem;
 }
