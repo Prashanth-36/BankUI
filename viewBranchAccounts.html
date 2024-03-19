@@ -11,11 +11,11 @@
       <ul class="top-nav">
         <li><img src="images/logo.png" alt="" id="logo" /></li>
         <li>
-          <a href="accountsManagement.html" class="active"
+          <a href="viewBranchAccounts.html" class="active"
             >Accounts Management</a
           >
         </li>
-        <li><a href="branchManagement.html">Branch Management</a></li>
+        <li><a href="viewAllBranches.html">Branch Management</a></li>
         <li><a href="">Customer Management</a></li>
         <li><a href="">Employee Management</a></li>
         <li><a href="">Fund Transfer</a></li>
@@ -27,7 +27,7 @@
       <aside>
         <ul class="side-nav">
           <li>
-            <a href="accountsManagement.html">Create Account</a>
+            <a href="accountForm.html">Create Account</a>
           </li>
           <li>
             <a href="viewBranchAccounts.html" class="active"
@@ -51,7 +51,7 @@
           <img src="images/search.png" alt="" width="50rem" />
         </form>
         <table class="border-table">
-          <tr>
+          <tr style="position: relative">
             <th
               colspan="7"
               style="
@@ -61,6 +61,17 @@
               "
             >
               Account Details
+              <button
+                onclick="window.location.href='accountForm.html'"
+                style="
+                  position: absolute;
+                  font-size: larger;
+                  right: 1rem;
+                  width: 2rem;
+                "
+              >
+                +
+              </button>
             </th>
           </tr>
           <tr>
@@ -72,7 +83,7 @@
             <th>Branch ID</th>
             <th>Account Status</th>
           </tr>
-          <tr>
+          <tr onclick="window.location.href='viewAccount.html?id=1'">
             <td>1</td>
             <td>121</td>
             <td>30000</td>
@@ -81,8 +92,8 @@
             <td>1223</td>
             <td>Active</td>
           </tr>
-          <tr>
-            <td>1</td>
+          <tr onclick="window.location.href='viewAccount.html?id=2'">
+            <td>2</td>
             <td>121</td>
             <td>30000</td>
             <td>Yes</td>
@@ -90,8 +101,8 @@
             <td>1223</td>
             <td>Active</td>
           </tr>
-          <tr>
-            <td>1</td>
+          <tr onclick="window.location.href='viewAccount.html?id=3'">
+            <td>3</td>
             <td>121</td>
             <td>30000</td>
             <td>Yes</td>
@@ -99,8 +110,8 @@
             <td>1223</td>
             <td>Active</td>
           </tr>
-          <tr>
-            <td>1</td>
+          <tr onclick="window.location.href='viewAccount.html?id=3'">
+            <td>3</td>
             <td>121</td>
             <td>30000</td>
             <td>Yes</td>
@@ -108,8 +119,8 @@
             <td>1223</td>
             <td>Active</td>
           </tr>
-          <tr>
-            <td>1</td>
+          <tr onclick="window.location.href='viewAccount.html?id=3'">
+            <td>3</td>
             <td>121</td>
             <td>30000</td>
             <td>Yes</td>
@@ -117,8 +128,44 @@
             <td>1223</td>
             <td>Active</td>
           </tr>
-          <tr>
-            <td>1</td>
+          <tr onclick="window.location.href='viewAccount.html?id=3'">
+            <td>3</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+          <tr onclick="window.location.href='viewAccount.html?id=3'">
+            <td>3</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+          <tr onclick="window.location.href='viewAccount.html?id=3'">
+            <td>3</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+          <tr onclick="window.location.href='viewAccount.html?id=3'">
+            <td>3</td>
+            <td>121</td>
+            <td>30000</td>
+            <td>Yes</td>
+            <td>2023-05-18</td>
+            <td>1223</td>
+            <td>Active</td>
+          </tr>
+          <tr onclick="window.location.href='viewAccount.html?id=3'">
+            <td>3</td>
             <td>121</td>
             <td>30000</td>
             <td>Yes</td>
@@ -129,5 +176,20 @@
         </table>
       </main>
     </div>
+    <div class="pages" id="pages">
+      <a id="previousPage" onclick="previousPage()"
+        ><img src="images/left.png" alt="previous" style="width: 1rem"
+      /></a>
+      <a href="" class="page activePage">1</a>
+      <a href="" class="page">2</a>
+      <a href="" class="page">3</a>
+      <a href="" class="page">4</a>
+      <a href="" class="page">5</a>
+      <a id="nextPage" onclick="nextPage()"
+        ><img src="images/right.png" alt="next" style="width: 1rem"
+      /></a>
+    </div>
+
+    <script src="script/page.js"></script>
   </body>
 </html>

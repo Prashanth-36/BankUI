@@ -11,15 +11,11 @@
       <ul class="top-nav">
         <li><img src="images/logo.png" alt="" id="logo" /></li>
         <li>
-          <a href="viewBranchAccounts.html" class="active"
-            >Accounts Management</a
-          >
+          <a href="customer.html" class="active">My Accounts</a>
         </li>
-        <li><a href="viewAllBranches.html">Branch Management</a></li>
-        <li><a href="">Customer Management</a></li>
-        <li><a href="">Employee Management</a></li>
-        <li><a href="">Fund Transfer</a></li>
+        <li><a href="moneyTransfer.html">Money Transfer</a></li>
       </ul>
+      <img src="images/profile-user.png" alt="" style="width: 2.6rem" />
       <a href="" class="top-nav" id="logout">Logout</a>
     </nav>
 
@@ -27,27 +23,14 @@
       <aside>
         <ul class="side-nav">
           <li>
-            <a href="accountForm.html">Create Account</a>
+            <a href="customer.html" class="active">My Accounts</a>
           </li>
-          <li><a href="viewBranchAccounts.html">View Branch Accounts</a></li>
           <li>
-            <a href="viewAccount.html" class="active"
-              >View / Modify Account Details</a
-            >
+            <a href="transactionStatement.html">View Transaction Statement</a>
           </li>
         </ul>
       </aside>
       <main class="main">
-        <form action="" method="get" class="search">
-          <label for="accountNo">Account Number</label>
-          <input
-            type="search"
-            name="accountNo"
-            id="accountNo"
-            placeholder="Account No"
-          />
-          <img src="images/search.png" alt="" width="50rem" />
-        </form>
         <table class="table">
           <tr>
             <th
@@ -90,31 +73,19 @@
             <td>Active</td>
           </tr>
         </table>
-        <!-- <button
-          style="
-            font-size: large;
-            padding: 0.5rem;
-            margin: auto;
-            display: block;
-            background-color: #009e60;
-            color: white;
-          "
-        >
-          Activate
-        </button> -->
-        <button
-          style="
-            font-size: large;
-            padding: 0.5rem;
-            margin: auto;
-            display: block;
-            background-color: #e34234;
-            color: white;
-          "
-        >
-          Deactivate
-        </button>
       </main>
+    </div>
+    <div class="options">
+      <div
+        class="card"
+        onclick="window.location.href=window.location.href+'&setPrimary=1'"
+      >
+        <img src="images/financial.png" alt="" width="50rem" />
+        <p>Set as Primary Account</p>
+      </div>
+      <div class="card">
+        <img src="images/password.png" alt="" width="50rem" />Change MPIN
+      </div>
     </div>
   </body>
 </html>

@@ -11,10 +11,10 @@
       <ul class="top-nav">
         <li><img src="images/logo.png" alt="" id="logo" /></li>
         <li>
-          <a href="accountsManagement.html">Accounts Management</a>
+          <a href="viewBranchAccounts.html">Accounts Management</a>
         </li>
         <li>
-          <a href="branchManagement.html" class="active">Branch Management</a>
+          <a href="branchForm.html" class="active">Branch Management</a>
         </li>
         <li><a href="">Customer Management</a></li>
         <li><a href="">Employee Management</a></li>
@@ -27,7 +27,7 @@
       <aside>
         <ul class="side-nav">
           <li>
-            <a href="branchManagement.html">Create Branch</a>
+            <a href="branchForm.html">Create Branch</a>
           </li>
           <li>
             <a href="viewAllBranches.html" class="active">View Branchs</a>
@@ -48,17 +48,29 @@
           />
           <img src="images/search.png" alt="" width="50rem" />
         </form>
-        <table class="border-table">
+        <table id="table" class="border-table">
           <tr>
             <th
-              colspan="7"
+              colspan="6"
               style="
                 text-align: center;
+                position: relative;
                 background-color: var(--blue);
                 color: white;
               "
             >
               Branch Details
+              <button
+                onclick="window.location.href='branchForm.html'"
+                style="
+                  position: absolute;
+                  font-size: larger;
+                  right: 1rem;
+                  width: 2rem;
+                "
+              >
+                +
+              </button>
             </th>
           </tr>
           <tr>
@@ -69,7 +81,7 @@
             <th>State</th>
             <th>Branch Status</th>
           </tr>
-          <tr>
+          <tr onclick="window.location.href='viewBranch.html?id=1'">
             <td>1</td>
             <td>VSB0001</td>
             <td>1st street</td>
@@ -77,15 +89,7 @@
             <td>Tamil Nadu</td>
             <td>Active</td>
           </tr>
-          <tr>
-            <td>1</td>
-            <td>VSB0001</td>
-            <td>1st street</td>
-            <td>Coimbatore</td>
-            <td>Tamil Nadu</td>
-            <td>Active</td>
-          </tr>
-          <tr>
+          <tr onclick="window.location.href='viewBranch.html?id=2'">
             <td>1</td>
             <td>VSB0001</td>
             <td>1st street</td>
@@ -96,5 +100,20 @@
         </table>
       </main>
     </div>
+    <div class="pages" id="pages">
+      <a id="previousPage" onclick="previousPage()"
+        ><img src="images/left.png" alt="previous" style="width: 1rem"
+      /></a>
+      <a href="" class="page activePage">1</a>
+      <a href="" class="page">2</a>
+      <a href="" class="page">3</a>
+      <a href="" class="page">4</a>
+      <a href="" class="page">5</a>
+      <a id="nextPage" onclick="nextPage()"
+        ><img src="images/right.png" alt="next" style="width: 1rem"
+      /></a>
+    </div>
+
+    <script src="script/page.js"></script>
   </body>
 </html>

@@ -33,7 +33,7 @@
         </ul>
       </aside>
       <main class="main">
-        <div class="options">
+        <div class="transfer-options">
           <div class="card" id="withinBank">
             <img src="images/banking.png" width="100rem" alt="" />
             <p>Within Bank Transaction</p>
@@ -91,7 +91,6 @@
           otherBank.classList.remove("selected");
           form.style.display = "flex";
           document.getElementById("beneficiaryIfsc").style.display = "none";
-          console.log(document.getElementById("beneficiaryIfsc").style.display);
         }
       });
       otherBank.addEventListener("click", () => {
@@ -99,6 +98,7 @@
         if (!classes.contains("selected")) {
           otherBank.classList.add("selected");
           withinBank.classList.remove("selected");
+          form.style.display = "flex";
           document.getElementById("beneficiaryIfsc").style.display = "block";
         }
       });
